@@ -20,6 +20,17 @@
 
 
 <body>
+
+	<button type="button" onclick="myFunction()">ow yea!</button>
+
+	<p id="demo">thanks for the tips DANA.</p>
+
+	<script>
+		function myFunction() {
+			document.getElementById("demo").innerHTML = "Im getting the hang of it";
+		}
+	</script>
+
 	<div id="warning">
 		<h6> this is just a drill. this is not final. </h6>
 	</div>
@@ -140,6 +151,13 @@
 
 
 	</table>
+
+
+	<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+		Click me to display Date and Time.</button>
+
+	<p id="demo"></p>
+
 
 	<h3>what</h3>
 	<h3>when</h3>
