@@ -20,215 +20,288 @@
 
 
 <body>
-	<form action="/action_page.php">
-		Birthday (month and year):
-		<input type="month" name="bdaymonth">
-		<input type="submit">
-	</form>
-	<button type="button" onclick="myFunction()">ow yea!</button>
-
-	<p id="demo">thanks for the tips DANA.</p>
+	<h1 onclick="changeText(this)">Click on this text! CHICKEN!</h1>
 
 	<script>
-		function myFunction() {
-			document.getElementById("demo").innerHTML = "Im getting the hang of it";
+		function changeText(id) {
+			id.innerHTML = "AAAAAAAAATTTTTTTTTTAAAAAAAHHHHHHHHH boy";
 		}
 	</script>
 
-	<div id="warning">
-		<h6> this is just a drill. this is not final. </h6>
-	</div>
-	<div id="compay name">
-		<title>
-			<h1>Spencer'z grappling and services</h1>
-		</title>
-	</div>
+	<style>
+		#container {
+			width: 400px;
+			height: 400px;
+			position: relative;
+			background: black;
+		}
+
+		#animate {
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			background-color: blue;
+		}
+	</style>
+
+	<body>
+
+		<p><button onclick="myMove()">Click Me BRUUAAHHH</button></p>
+
+		<div id="container">
+			<div id="animate"></div>
+		</div>
+
+		<script>
+			function myMove() {
+				var elem = document.getElementById("animate");
+				var pos = 0;
+				var id = setInterval(frame, 5);
+				function frame() {
+					if (pos == 350) {
+						clearInterval(id);
+					} else {
+						pos++;
+						elem.style.top = pos + "px";
+						elem.style.left = pos + "px";
+					}
+				}
+			}
+		</script>
+		</style>
+		<form action="/action_page.php">
+			Birthday (month and year):
+			<input type="month" name="bdaymonth">
+			<input type="submit">
+		</form>
+		<button type="button" onclick="myFunction()">ow yea!</button>
+
+		<p id="demo">thanks for the tips DANA.</p>
+
+		<script>
+			function myFunction() {
+				document.getElementById("demo").innerHTML = "Im getting the hang of it";
+			}
+		</script>
+
+		<div id="warning">
+			<h6> this is just a drill. this is not final. </h6>
+		</div>
+		<div id="compay name">
+			<title>
+				<h1>Spencer'z grappling and services</h1>
+			</title>
+		</div>
 
 
-	<h2>Learning Forms</h2>
-	<p>INDY BOXNIG AND GRAPPLING</p>
+		<h2>Learning Forms</h2>
+		<p>INDY BOXNIG AND GRAPPLING</p>
 
-	<form action="/action_page.php" target="_blank">
-		First name:<br>
-		<input type="text" name="firstname" value="">
-		<br>
-		Last name:<br>
-		<input type="text" name="lastname" value="">
-		<br><br>
-		<input type="submit" value="Submit">
-	</form>
+		<form action="/action_page.php" target="_blank">
+			First name:<br>
+			<input type="text" name="firstname" value="">
+			<br>
+			Last name:<br>
+			<input type="text" name="lastname" value="">
+			<br><br>
+			<input type="submit" value="Submit">
+		</form>
 
-	<div id="Who">
-		<img src="https://i.ytimg.com/vi/A3yLiTEkDaI/maxresdefault.jpg" height="250" alt="rap video hoody hoo" />
-		<h2>HOODY-HOOOOOO? </h2>
-		<ul>
-			<h4>
-				<li>xxxxo Spencer<br></li>
-				<li>xxxxs Spencer<br></li>
-				<li>xxxxr Spencer<br></li>
-				<li>xxxx Spencer<br></li>
-				<li>BIG BO<br></li>
-				<li>Professor Dxxa<br></li>
-				<li>Professor Bxxxes<br></li>
-				<li>DOLLLLIEEYEYEYEYEYE<br>
-			</h4>
-			</li>
-		</ul>
-		<p>"there is just to many people to name and do an intro on you ma ninja'z up off in this thang.
-			ant nothin to it, but to do it. ant no <strong>thang,</strong> chiken wang."</p>
-	</div>
-	<h2>A new table</h2>
-	<p>how fast am i catching on</p>
+		<div id="Who">
+			<img src="https://i.ytimg.com/vi/A3yLiTEkDaI/maxresdefault.jpg" height="250" alt="rap video hoody hoo" />
+			<h2>HOODY-HOOOOOO? </h2>
+			<ul>
+				<h4>
+					<li>xxxxo Spencer<br></li>
+					<li>xxxxs Spencer<br></li>
+					<li>xxxxr Spencer<br></li>
+					<li>xxxx Spencer<br></li>
+					<li>BIG BO<br></li>
+					<li>Professor Dxxa<br></li>
+					<li>Professor Bxxxes<br></li>
+					<li>DOLLLLIEEYEYEYEYEYE<br>
+				</h4>
+				</li>
+			</ul>
+			<p>"there is just to many people to name and do an intro on you ma ninja'z up off in this thang.
+				ant nothin to it, but to do it. ant no <strong>thang,</strong> chiken wang."</p>
+		</div>
+		<h2>A new table</h2>
+		<p>how fast am i catching on</p>
 
-	<form action="/action_page.php">
-		<select name="speed" size="3">
-			<option value="1">1</option>
-			<option value="2">2</option>
-			<option value="3">3</option>
-			<option value="100">100</option>
-		</select>
-		<br><br>
-		<input type="submit">
-	</form>
+		<form action="/action_page.php">
+			<select name="speed" size="3">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="100">100</option>
+			</select>
+			<br><br>
+			<input type="submit">
+		</form>
 
-	<div id="what">
-		<h2>you wonder whats crackalackin huh?</h2>
-		<h4></h4>
-		<p>"we go all kinds of stuff jumpin up off in this thang. resources is urrythang round here sucka!"</p>
-	</div>
-	<div id="when">
-		<h2>Time is Monaaay, it take money to make mo money. time??</h2>
-		<h4></h4>
-		<p>"rain, sleet,snow, just no bugs bruh"</p>
-	</div>
-	<div id="where">
-		<h2>1020? i ant the police</h2>
-		<h4></h4>
-		<p>"naptown 317 or pay our travel fee we will hook you up doe"</p>
-	</div>
-	<div id="why">
-		<h2>ant no body trien to scam you helpa brotha out. wonder why we do what we do?</h2>
-		<h4></h4>
-		<p>"a ninja tryna come up."</p>
-	</div>
-	<h2>New Table</h2>
-	<p>type below your social security number, then go to the bank and give coach all the doe. they "DONE" then complete
-	</p>
+		<div id="what">
+			<h2>you wonder whats crackalackin huh?</h2>
+			<h4></h4>
+			<p>"we go all kinds of stuff jumpin up off in this thang. resources is urrythang round here sucka!"</p>
+		</div>
+		<div id="when">
+			<h2>Time is Monaaay, it take money to make mo money. time??</h2>
+			<h4></h4>
+			<p>"rain, sleet,snow, just no bugs bruh"</p>
+		</div>
+		<div id="where">
+			<h2>1020? i ant the police</h2>
+			<h4></h4>
+			<p>"naptown 317 or pay our travel fee we will hook you up doe"</p>
+		</div>
+		<div id="why">
+			<h2>ant no body trien to scam you helpa brotha out. wonder why we do what we do?</h2>
+			<h4></h4>
+			<p>"a ninja tryna come up."</p>
+		</div>
 
-	<form action="/action_page.php">
-		<textarea name="message" style="width:200px; height:300px;"></textarea>
-		<br>
-		<input type="submit">
-	</form>
+	
+		</style>
 
-	<div id="contacts">
-		<h2>contact</h2>
-		<h4></h4>
-		<ol>
-			<li>
-				<p>
-					<em>"221-330-8004 mike jones up up the flow, cuz mike jones up on tha dow"
+		<body>
 
-					</em></p>
-			</li>
-			<li>8008-7322</li>
-			<li>304</li>
-			<li>saggin backwards is ninjas</li>
-			<video src="https://www.youtube.com/embed/GKNOCcTj1MA" width="560" height="315" controls></video>
-			<a href="https://www.youtube.com/watch?v=GKNOCcTj1MA" target="_blank"><br>the youtube video that dont
-				work</a>
-			<a href="https://www.youtube.com/watch?v=GKNOCcTj1MA" target="_blank">
-				<br><img src="dmarcuspointer.jpg" height="250" alt="new link" />
+			
 
-			</a>
+			<h2>New Table</h2>
+			<p>type below your social security number, then go to the bank and give coach all the doe. they "DONE" then
+				complete
+			</p>
 
-			<a href="https://www.youtube.com/watch?v=GKNOCcTj1MA" target="_blank"><br> youtube video that DOES work</a>
-			<a href="https://www.youtube.com/watch?v=GKNOCcTj1MA" target="_blank">
-				<img src="2ndPic.jpg" height="250" alt="new link" />
+			<form action="/action_page.php">
+				<textarea name="message" style="width:200px; height:300px;"></textarea>
+				<br>
+				<input type="submit">
+			</form>
 
-			</a>
-	</div>
-	<!--I need help with the linking videos crap -->
-	<h2>another cool thanng</h2>
-	<p>how much of a tip you gone give CUZZO?</p>
-	<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-		0
-		<input type="range" id="a" name="a" value="50">
-		100 +
-		<input type="number" id="b" name="b" value="50">
-		=
-		<output name="x" for="a b"></output>
-		<br><br>
-		<input type="submit">
-	</form>
+			<div id="contacts">
+				<h2>contact</h2>
+				<h4></h4>
+				<ol>
+					<li>
+						<p>
+							<em>"221-330-8004 mike jones up up the flow, cuz mike jones up on tha dow"
 
-	<p><strong>Note:</strong> follow ALL Directions and find all FORMS</p>
-	<div>
-		<iframe width="420" height="315" src="http://www.youtube.com/embed/GKNOCcTj1MA">
-		</iframe>
-	</div>
-	<div id="ownersExamples">
-		<h1>font sizes below remeber im learnin this shizzznizzz cuuh!!</h1>
-	</div>
+							</em></p>
+					</li>
+					<li>8008-7322</li>
+					<li>304</li>
+					<li>saggin backwards is ninjas</li>
+					<video src="https://www.youtube.com/embed/GKNOCcTj1MA" width="560" height="315" controls></video>
+					<a href="https://www.youtube.com/watch?v=GKNOCcTj1MA" target="_blank"><br>the youtube video that
+						dont
+						work</a>
+					<a href="https://www.youtube.com/watch?v=GKNOCcTj1MA" target="_blank">
+						<br><img src="dmarcuspointer.jpg" height="250" alt="new link" />
 
+					</a>
 
-	<h2>another new button</h2>
+					<a href="https://www.youtube.com/watch?v=GKNOCcTj1MA" target="_blank"><br> youtube video that DOES
+						work</a>
+					<a href="https://www.youtube.com/watch?v=GKNOCcTj1MA" target="_blank">
+						<img src="2ndPic.jpg" height="250" alt="new link" />
 
-	<button type="button" onclick="alert('did you go to the bank?')">Click Me! punk</button>
+					</a>
+			</div>
+			<!--I need help with the linking videos crap -->
+			<h2>another cool thanng</h2>
+			<p>how much of a tip you gone give CUZZO?</p>
+			<form action="/action_page.php" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+				0
+				<input type="range" id="a" name="a" value="50">
+				100 +
+				<input type="number" id="b" name="b" value="50">
+				=
+				<output name="x" for="a b"></output>
+				<br><br>
+				<input type="submit">
+			</form>
 
-
-
-	<table>
-		<tr>
-			<td>mu</td>
-			<td>th</td>
-			<td>uuah</td>
-		</tr>
-		<tr>
-			<td>heee</td>
-			<td>llll</td>
-			<td>ooowww</td>
-		</tr>
-
-		<table style="width:100%" table, th, td { border: 1px solid black; }>
-			<caption>New Tew Da Game</caption>
-			<tr>
-				<th>Firstname</th>
-				<th>Lastname</th>
-				<th>Age</th>
-			</tr>
-			<tr>
-				<td>Jill</td>
-				<td>Smith</td>
-				<td>50</td>
-			</tr>
-			<tr>
-				<td>Eve</td>
-				<td>Jackson</td>
-				<td>94</td>
-			</tr>
-		</table>
+			<p><strong>Note:</strong> follow ALL Directions and find all FORMS</p>
+			<div>
+				<iframe width="420" height="315" src="http://www.youtube.com/embed/GKNOCcTj1MA">
+				</iframe>
+			</div>
+			<div id="ownersExamples">
+				<h1>font sizes below remeber im learnin this shizzznizzz cuuh!!</h1>
+			</div>
 
 
-	</table>
+			<h2>another new button</h2>
 
-
-	<button type="button" Sonclick="document.getElementById('demo').innerHTML = Date()">
-		Click me to display Date and Time.</button>
-
-	<p id="demo"></p>
-
-
-	<h3>what</h3>
-	<h3>when</h3>
-	<h4>Where</h4>
-	<h5>why</h5>
-	<h6>contacts<h6>
+			<button type="button" onclick="alert('did you go to the bank?')">Click Me! punk</button>
 
 
 
+			<table>
+				<tr>
+					<td>mu</td>
+					<td>th</td>
+					<td>uuah</td>
+				</tr>
+				<tr>
+					<td>heee</td>
+					<td>llll</td>
+					<td>ooowww</td>
+				</tr>
 
-</body>
+				<table style="width:100%" table, th, td { border: 1px solid black; }>
+					<caption>New Tew Da Game</caption>
+					<tr>
+						<th>Firstname</th>
+						<th>Lastname</th>
+						<th>Age</th>
+					</tr>
+					<tr>
+						<td>Jill</td>
+						<td>Smith</td>
+						<td>50</td>
+					</tr>
+					<tr>
+						<td>Eve</td>
+						<td>Jackson</td>
+						<td>94</td>
+					</tr>
+				</table>
+
+
+			</table>
+
+
+			<button type="button" Sonclick="document.getElementById('demo').innerHTML = Date()">
+				Click me to display Date and Time.</button>
+
+			<p id="demo"></p>
+
+			<p>Click "DISPLAY" to execute the displayDate() function.</p>
+
+			<button id="myBtn">DISPLAY </button>
+
+			<p id="demo"></p>
+
+			<script>
+				document.getElementById("myBtn").onclick = displayDate;
+
+				function displayDate() {
+					document.getElementById("demo").innerHTML = Date();
+				}
+			</script>
+
+			<h3>what</h3>
+			<h3>when</h3>
+			<h4>Where</h4>
+			<h5>why</h5>
+			<h6>contacts<h6>
+
+
+
+
+		</body>
 
 </html>
 </head>
