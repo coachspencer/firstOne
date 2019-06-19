@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script>
+        function myFunction() {
+            alert('this calculator is under construction! dont get smashed. and remember..... Dont be an inch worm');
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <button onclick="setTimeout(myFunction, 3000);">Urgent! msge, Mr dana</button><br><br>
+
+    <a href="page2.html" target="blank">Page 2</a>
+    <div>
+        <form name="calculator">
+    </div>
+    </div>
+    <div>
+        <tr>
+            <td colspan="4"><input type="text" name="display" id="display" disabled /></td>
+        </tr>
+    </div>
+    <tr>
+        <div>
+            <td><input type="button" name="one" value="1" onclick="calculator.display.value += '1'" /></td>
+        </div>
+        <div>
+            <td><input type="button" name="two" value="2" onclick="calculator.display.value += '2'" /></td>
+        </div>
+        <div>
+            <td><input type="button" name="three" value="3" onclick="calculator.display.value +='3'" /></td>
+        </div>
+        <div>
+            <td><input type="button" class="operation" name="plus" value="+"
+                    onclick="calculator.display.value += '+'" /></td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><input type="button" name="four" value="4" onclick="calculator.display.value += '4'" /></td>
+        </div>
+        <div>
+            <td><input type="button" name="five" value="5" onclick="calculator.display.value += '5'" /></td>
+        </div>
+        <div>
+            <td><input type="button" name="six" value="6" onclick="calculator.display.value += '6'" /></td>
+        </div>
+        <div>
+            <td><input type="button" class="operation" name="minus" value="-"
+                    onclick="calculator.display.value += '-'" /></td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><input type="button" name="seven" value="7" onclick="calculator.display.value += '7'" /></td>
+        </div>
+        <div>
+            <td><input type="button" name="eight" value="8" onclick="calculator.display.value += '8'" /></td>
+        </div>
+        <div>
+            <td><input type="button" name="nine" value="9" onclick="calculator.display.value += '9'" /></td>
+        </div>
+        <div>
+            <td><input type="button" class="operation" name="times" value="*"
+                    onclick="calculator.display.value += '*'" /></td>
+        </div>
+    </tr>
+    <tr>
+        <div>
+            <td><input type="button" id="clear" name="clear" value="c" onclick="calculator.display.value = ''" />
+
+            </td>
+        </div>
+        <div>
+            <td><input type="button" name="zero" value="0" onclick="calculator.display.value += '0'" /></td>
+        </div>
+        <div>
+            <td><input type="button" class="operation" name="doit" value="="
+                    onclick="calculator.display.value=eval(calculator.display.value)" /></td>
+        </div>
+        <div>
+            <td><input type="button" class="operaton" name="div" value="/" onclick="calculator.display.value += '/'" />
+            </td>
+        </div>
+    </tr>
+    </form>
+</body>
+<a href="index.html" target="blank">Page 1</a>
+
+</html>
